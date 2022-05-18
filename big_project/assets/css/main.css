@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.navbar-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 60px;
+}
+
+.navbar-left img {
+  width: 233px;
+  height: 30px;
+}
+
+.navbar-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 60px;
+}
+
+.navbar-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+  margin: 0;
+}
+
+.navbar-list a {
+  text-decoration: none;
+  color: black;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+}
+
+.navbar-list a:hover {
+  text-decoration: underline;
+}
+
+.search-carts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 40px 60px;
+  gap: 40px;
+}
+
+.search-bar i {
+  color: black;
+}
+
+.search-bar i:hover {
+  color: red;
+}
+
+.cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 13px;
+  text-decoration: none;
+}
+
+.cart i {
+  font-size: 24px;
+  color: black;
+}
+
+.cart p {
+  font-size: 12px;
+  margin: 0;
+  color: black;
+  font-family: Montserrat, sans-serif;
+}
+
+.cart:hover {
+  text-decoration: underline;
+}
+
+.home-dropdown, .pages-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.home-dropdown-content, .pages-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  margin-left: -20px;
+  background-color: whitesmoke;
+  z-index: 1;
+  top: 60px;
+}
+
+.home-dropdown-content a, .pages-dropdown-content a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.home-dropdown-content a:hover, .pages-dropdown-content a:hover {
+  text-decoration: underline;
+}
+
+.home-dropdown:hover .home-dropdown-content {
+  display: block;
+}
+
+.pages-dropdown:hover .pages-dropdown-content {
+  display: block;
+}
+/*# sourceMappingURL=main.css.map */

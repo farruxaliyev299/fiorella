@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar{
+
+}
+
+.navbar-left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 60px;
+    img{
+        width: 233px;
+        height: 30px;
+    }
+}
+
+.navbar-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 60px;
+}
+
+.navbar-list{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    margin: 0;
+    a{
+        text-decoration: none;
+        color: black;
+        font-family: $primary-font-family;
+        font-size: $primary-font-size;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.search-carts{
+    display: flex;
+    justify-content: flex-start;
+    padding: 40px 60px;
+    gap: 40px;
+}
+
+.search-bar{
+
+    i{
+        color: black;
+        &:hover{
+            color: red;
+        }
+    }
+}
+
+.cart{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    text-decoration: none;
+    i{
+        font-size: 24px;
+        color: black;
+    }
+    p{
+        font-size: 12px;
+        margin: 0;
+        color: $primary-text-color;
+        font-family: $primary-font-family;
+    }
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+.home-dropdown , .pages-dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.home-dropdown-content , .pages-dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: $secondary-text-color;
+    min-width: 160px;
+    margin-left: -20px;
+    background-color: whitesmoke;
+    z-index: 1;
+    top: 60px;
+    // a:first-child{
+    //     margin-top: 50px;
+    // }
+    a{
+        display: block;
+        padding: 10px 20px;
+        font-size: 14px;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+
+.home-dropdown{
+    &:hover{
+        .home-dropdown-content{
+            display: block;
+        }
+    }
+}
+
+.pages-dropdown{
+    &:hover{
+        .pages-dropdown-content{
+            display: block;
+        }
+    }
+}
