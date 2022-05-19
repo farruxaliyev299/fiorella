@@ -102,29 +102,87 @@
   text-decoration: underline;
 }
 
-.home-dropdown, .pages-dropdown {
+.home-dropdown, .pages-dropdown, .shop-dropdown, .portfolio-dropdown {
   position: relative;
   display: inline-block;
 }
 
-.home-dropdown-content, .pages-dropdown-content {
-  display: none;
+/* .home-dropdown-content , .pages-dropdown-content , */
+.portfolio-dropdown-content {
+  display: block;
   position: absolute;
   background-color: white;
   min-width: 160px;
   margin-left: -20px;
   background-color: whitesmoke;
   z-index: 1;
-  top: 60px;
 }
 
-.home-dropdown-content a, .pages-dropdown-content a {
+.portfolio-dropdown-content a {
   display: block;
   padding: 10px 20px;
   font-size: 14px;
 }
 
-.home-dropdown-content a:hover, .pages-dropdown-content a:hover {
+.portfolio-dropdown-content a:hover {
+  text-decoration: underline;
+}
+
+.portfolio-dropdown-content span {
+  display: block;
+  padding: 10px 20px;
+}
+
+.shop-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 860px;
+  margin-left: -20px;
+  background-color: whitesmoke;
+  z-index: 1;
+}
+
+.shop-dropdown-content a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.shop-dropdown-content a:hover {
+  text-decoration: underline;
+}
+
+.shop-dropdown-content span {
+  display: block;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-top: 50px;
+}
+
+.portfolio-layouts-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.portfolio-layouts-dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: whitesmoke;
+  min-width: 160px;
+  margin-left: 160px;
+  z-index: 1;
+}
+
+.portfolio-layouts-dropdown-content a {
+  display: block;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.portfolio-layouts-dropdown-content a:hover {
   text-decoration: underline;
 }
 
@@ -133,6 +191,18 @@
 }
 
 .pages-dropdown:hover .pages-dropdown-content {
+  display: block;
+}
+
+.shop-dropdown:hover .shop-dropdown-content {
+  display: block;
+}
+
+.portfolio-dropdown:hover .portfolio-dropdown-content {
+  display: block;
+}
+
+.portfolio-layouts-dropdown:hover .portfolio-layouts-dropdown-content {
   display: block;
 }
 /*# sourceMappingURL=main.css.map */

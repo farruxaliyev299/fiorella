@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-#navbar{
-
-}
-
 .navbar-left{
     display: flex;
     justify-content: flex-start;
@@ -79,23 +75,74 @@
     }
 }
 
-.home-dropdown , .pages-dropdown{
+.home-dropdown , .pages-dropdown , .shop-dropdown , .portfolio-dropdown{
     position: relative;
     display: inline-block;
 }
 
-.home-dropdown-content , .pages-dropdown-content{
-    display: none;
+/* .home-dropdown-content , .pages-dropdown-content , */ .portfolio-dropdown-content{
+    display: block  ;
     position: absolute;
     background-color: $secondary-text-color;
     min-width: 160px;
     margin-left: -20px;
     background-color: whitesmoke;
     z-index: 1;
-    top: 60px;
     // a:first-child{
     //     margin-top: 50px;
     // }
+    a{
+        display: block;
+        padding: 10px 20px;
+        font-size: 14px;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    span{
+        display: block;
+        padding: 10px 20px;
+    }
+}
+
+.shop-dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: $secondary-text-color;
+    min-width: 860px;
+    margin-left: -20px;
+    background-color: whitesmoke;
+    z-index: 1;
+    a{
+        display: block;
+        padding: 10px 20px;
+        font-size: 14px;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    span{
+        display: block;
+        font-family: sans-serif;
+        font-weight: bolder;
+        font-size: $third-font-size;
+        padding: 10px 20px;
+        margin-top: 50px;
+    }
+}
+
+.portfolio-layouts-dropdown{
+    display: inline-block;
+    position: relative;
+}
+
+.portfolio-layouts-dropdown-content{
+    display: block;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 160px;
+    margin-left: 160px;
+    z-index: 1;
     a{
         display: block;
         padding: 10px 20px;
@@ -117,6 +164,30 @@
 .pages-dropdown{
     &:hover{
         .pages-dropdown-content{
+            display: block;
+        }
+    }
+}
+
+.shop-dropdown{
+    &:hover{
+        .shop-dropdown-content{
+            display: block;
+        }
+    }
+}
+
+.portfolio-dropdown{
+    &:hover{
+        .portfolio-dropdown-content{
+            display: block;
+        }
+    }
+}
+
+.portfolio-layouts-dropdown{
+    &:hover{
+        .portfolio-layouts-dropdown-content{
             display: block;
         }
     }
