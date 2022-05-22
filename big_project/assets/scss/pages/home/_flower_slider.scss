@@ -1,0 +1,98 @@
+.carousel-item{
+    .carousel-caption{
+        top: 20%;
+        display: flex;
+        flex-direction: column;
+        text-align: left !important;
+        h5{ 
+            font-size: 56px;
+            width: 40%;
+            span{
+                color: red !important;
+                margin: 0 5px;
+            }
+        }
+        p{
+            width: 40%;
+            position: relative;
+            top: 20px;
+            font-size: $third-font-size;
+            color: $third-color;
+        }
+        h2{
+            display: inline-block;
+            position: relative;
+            top: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 1443px) {
+    .carousel-caption{
+        top: 10% !important;
+        h5{ 
+            font-size: 36px !important;
+            width: 40%;
+            span{
+                color: red !important;
+                margin: 0 5px;
+            }
+        }
+        p{
+            width: 40%;
+            position: relative;
+            top: 20px;
+            font-size: 10px;
+            color: $third-color;
+        }
+        h2{
+            display: inline-block;
+            position: relative;
+            top: 10px;
+            img{
+                width: 150px;
+                height: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .carousel-caption{
+        top: 10% !important;
+        h2{
+            display: none !important;
+        }
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .carousel-caption{
+        top: 10% !important;
+        h5{
+            font-size: 26px !important;
+        }
+        h2{
+            display: inline-block !important;
+        }
+        p{
+            display: none;
+        }
+    }   
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-caption{
+        display: inline-block !important;
+        top: 5% !important;
+        h5{
+            font-size: 20px !important;
+        }
+        h2{
+            display: inline-block !important;
+        }
+        p{
+            display: none;
+        }
+    }
+}

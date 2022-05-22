@@ -18,6 +18,9 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/assets/css/main.css" />
+    <script src="./JS/navbar/searchabr.js" defer></script>
+    <script src="./JS/navbar/hamburger.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous" defer></script>
     <title>Fiorella - Home</title>
   </head>
   <body>
@@ -25,15 +28,20 @@
       <nav id="navbar">
         <div class="container">
           <div class="row">
-            <div class="navbar-left col-4">
+            <div class="navbar-left col-xl-4 col-6">
               <a href="#">
                 <img src="./assets/images/navbar/logo.png" alt="logo picture" />
               </a>
             </div>
-            <div class="navbar-right col-4">
+            <div class="navbar-right col-xl-4 col-6">
+              <div class="hamburger">
+                <div class="hamburger-line1"></div>
+                <div class="hamburger-line2"></div>
+                <div class="hamburger-line3"></div>
+              </div>
               <ul class="navbar-list">
                 <li class="home-dropdown">
-                  <a href="#">HOME</a>
+                  <a href="#" class="a-home padding">HOME</a>
                   <div class="home-dropdown-content">
                     <a href="#">Main Home</a>
                     <a href="#">Grid Home</a>
@@ -45,7 +53,7 @@
                   </div>
                 </li>
                 <li class="pages-dropdown">
-                  <a href="#">PAGES</a>
+                  <a href="#" class="a-pages padding">PAGES</a>
                   <div class="pages-dropdown-content">
                     <a href="#">About Us</a>
                     <a href="#">FAQ Page</a>
@@ -53,7 +61,7 @@
                   </div>
                 </li>
                 <li class="shop-dropdown">
-                  <a href="#">SHOP</a>
+                  <a href="#" class="a-shop padding">SHOP</a>
                   <div class="shop-dropdown-content">
                     <div class="row">
                       <div class="product-types col-3">
@@ -99,14 +107,14 @@
                   </div>
                 </li>
                 <li class="portfolio-dropdown">
-                  <a href="#">PORTFOLIO</a>
+                  <a href="#" class="a-portolio padding">PORTFOLIO</a>
                   <div class="portfolio-dropdown-content">
                     <a href="#">Standart</a>
                     <a href="#">Gallery</a>
                     <a href="#">Masonry</a>
                     <div class="portfolio-layouts-dropdown">
                       <a href="#">
-                        Portfolio Layouts   >
+                        Portfolio Layouts>
                       </a>
                       <div class="portfolio-layouts-dropdown-content">
                         <a href="#">Two Columns</a>
@@ -116,20 +124,97 @@
                         <a href="#">Five Columns Wide</a>
                       </div>
                     </div>
-                    <a href="#">Portfolio Single    ></a>
+                    <div class="portfolio-single-dropdown">
+                      <a href="#">Portfolio Single></a>
+                      <div class="portfolio-single-dropdown-content">
+                        <a href="#">Small Images</a>
+                        <a href="#">Small Slider</a>
+                        <a href="#">Big Images</a>
+                        <a href="#">Big Slider</a>
+                        <a href="#">Gallery</a>
+                      </div>
+                    </div>
                   </div>
                 </li>
-                <li>
-                  <a href="#">BLOG</a>
+                <li class="blog-dropdown">
+                  <a href="#" class="a-blog padding">BLOG</a>
+                  <div class="blog-dropdown-content">
+                    <a href="#">Masonry</a>
+                    <a href="#">Standart</a>
+                    <div class="blog-post-dropdown">
+                      <a href="#">Post Types ></a>
+                      <div class="blog-post-dropdown-content">
+                        <a href="#">Standart</a>
+                        <a href="#">Gallery</a>
+                        <a href="#">Link</a>
+                        <a href="#">Quote</a>
+                        <a href="#">Audio</a>
+                        <a href="#">Video</a>
+                      </div>
+                    </div>
+                  </div>
                 </li>
-                <li>
-                  <a href="#">ELEMENTS</a>
+                <li class="elements-dropdown">
+                  <a href="#" class="a-elements padding">ELEMENTS</a>
+                  <div class="elements-dropdown-content">
+                    <div class="classic-dropdown">
+                      <a href="#">Classic ></a>
+                      <div class="classic-dropdown-content">
+                        <a href="#">Accordions</a>
+                        <a href="#">Tabs</a>
+                        <a href="#">Buttons</a>
+                        <a href="#">Video Button</a>
+                        <a href="#">Contact Form</a>
+                      </div>
+                    </div>
+                    <div class="infographic-dropdown">
+                      <a href="#">Infografic ></a>
+                      <div class="infographic-dropdown-content">
+                        <a href="#">Blog List</a>
+                        <a href="#">Counters</a>
+                        <a href="#">Countdown</a>
+                        <a href="#">Google Maps</a>
+                        <a href="#">Progress Bar</a>
+                        <a href="#">Pie Charts</a>
+                      </div>
+                    </div>
+                    <div class="interactive-dropdown">
+                      <a href="#">Interactive ></a>
+                      <div class="interactive-dropdown-content">
+                        <a href="#">Image Gallery</a>
+                        <a href="#">Testimonials</a>
+                        <a href="#">Team</a>
+                        <a href="#">Banner</a>
+                        <a href="#">Shop List</a>
+                        <a href="#">Portfolio List</a>
+                      </div>
+                    </div>
+                    <div class="typhography-dropdown">
+                      <a href="#">Typography ></a>
+                      <div class="typhography-dropdown-content">
+                        <a href="#">Headings</a>
+                        <a href="#">Columns</a>
+                        <a href="#">Section Title</a>
+                        <a href="#">Blockquote</a>
+                        <a href="#">Dropcaps</a>
+                        <a href="#">Highlights</a>
+                        <a href="#">Seperators</a>
+                        <a href="#">Custom Fonts</a>
+                      </div>
+                    </div>
+                  </div>
                 </li>
               </ul>
             </div>
-            <div class="navbar-right search-carts col-4">
+            <div class="navbar-right search-carts col-lg-4 col-6">
               <a href="#" class="search-bar">
                 <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="search-box">
+                  <input type="text" class="in-search-box" placeholder="Search">
+                  <a href="">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                </div>
               </a>
               <a href="#" class="cart">
                 <i class="fa-solid fa-bag-shopping"></i>
@@ -140,5 +225,56 @@
         </div>
       </nav>
     </header>
+    <main>
+      <section class="flowers-slider">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="./assets/images/flower-slider/h3-slider-background.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Send <span> flowers </span> like you mean it</h5>
+                <p>Where flowers are our inspiration to create lasting memories. Whatever the occasion, our flowers will make it special cursus a sit amet mauris.</p>
+                <h2>
+                  <img src="./assets/images/flower-slider/h2-sign-img.png" alt="sign">
+                </h2>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="./assets/images/flower-slider/h3-slider-background-2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Send <span> flowers </span> like you mean it</h5>
+                <p>Where flowers are our inspiration to create lasting memories. Whatever the occasion, our flowers will make it special cursus a sit amet mauris.</p>
+                <h2>
+                  <img src="./assets/images/flower-slider/h2-sign-img.png" alt="sign">
+                </h2>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/images/flower-slider/h3-slider-background-3.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Send <span> flowers </span> like you mean it</h5>
+                <p>Where flowers are our inspiration to create lasting memories. Whatever the occasion, our flowers will make it special cursus a sit amet mauris.</p>
+                <h2>
+                  <img src="./assets/images/flower-slider/h2-sign-img.png" alt="sign">
+                </h2>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
