@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.filter{
+    padding:0;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    margin-top: 50px;
+}
+
+.filter-left{
+    display: flex;
+    gap: 20px;
+    padding-left: 0;
+    margin:0;
+    li{
+        list-style-type: none;
+        a{
+            color:black;
+            text-decoration: none;
+            font-family: $primary-font-family;
+            font-size: $fourth-font-size;
+            &:hover{
+                color: red;
+                transition-duration: 0.2s;
+            }
+        }
+    }
+}
+
+.filter-right{
+    display: flex;
+    justify-content: flex-end;
+    a{
+        color:black;
+        text-decoration: none;
+        font-family: $primary-font-family;
+        font-size: $fourth-font-size;
+        &:hover{
+            color: red;
+            transition-duration: 0.2s;
+        }
+    }
+}
+
+.active{
+    color: red;
+}
+
+.filter-dropdown{
+    display: inline-block;
+    position: relative;
+}
+
+.filter-dropdown-content{
+    position: absolute;
+    visibility: hidden;
+    // transform-origin: top;
+    // transform: scaleY(0%);
+    z-index: -1;
+    background-color: $secondary-color;
+    width: 460px;
+    top: 20px;
+    right: 0px;
+    z-index: 2;
+    // transition: all 0.5s , visibility 0s  , z-index 0s ;
+    a{
+        display: block;
+        padding: 10px 50px;
+        font-size: 14px;
+        color: $third-color;
+    }
+    span{
+        display: block;
+        font-family: sans-serif;
+        font-weight: bolder;
+        font-size: $third-font-size;
+        padding: 10px 50px;
+        margin-top: 50px;
+    }
+}
+
+.filter-dropdown{
+    &:focus,&:focus-within,&:hover{
+        .filter-dropdown-content{
+            visibility: visible;
+            // transform-origin: top;
+            // transform: scaleY(100%);
+            // opacity: 1;
+            // z-index: 1;
+            // zoom: 100%;
+            // transition-delay: 0s, 0s, 0.1s;
+        }
+    }
+}
+
+.filter-dropdown-content{
+    a{
+        &:hover{
+            color: $primary-color;
+        }
+    }
+}
+
+.flower-cards{
+    display: flex;
+    padding: 0;
+    margin-top: 25px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-item{
+    font-family: $primary-font-family;
+    width: fit-content;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    .card-image{
+        overflow: hidden;
+        img{
+            width: 295px;
+            height: 380.64px;
+            &:hover{
+                transform: scale(1.05);
+                transition-duration: 1s;
+            }
+        }
+    }
+    .card-title{
+        margin-top: 10px;
+        text-align: center;
+    }
+    .add-to-card{
+        display: inline-block;
+        text-align: center;
+        overflow: hidden;
+        a{
+            position: relative;
+            color: #bdb8b8;
+            text-decoration: none;
+            // margin-right: 50px;
+        }
+    }
+}
+
