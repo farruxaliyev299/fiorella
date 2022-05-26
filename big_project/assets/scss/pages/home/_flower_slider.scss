@@ -1,4 +1,8 @@
 .carousel-item{
+    img{
+        animation-name: Zoomer;
+        animation-duration: 10s;   
+    }
     .carousel-caption{
         top: 20%;
         display: flex;
@@ -55,6 +59,16 @@
             }
         }
     }
+}
+
+@keyframes Zoomer {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.06);
+    }
+    
 }
 
 @media screen and (max-width: 1199px) {

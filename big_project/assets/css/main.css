@@ -593,6 +593,13 @@
   }
 }
 
+.carousel-item img {
+  -webkit-animation-name: Zoomer;
+          animation-name: Zoomer;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
 .carousel-item .carousel-caption {
   top: 20%;
   display: -webkit-box;
@@ -656,6 +663,28 @@
   .carousel-caption h2 img {
     width: 150px;
     height: 50px;
+  }
+}
+
+@-webkit-keyframes Zoomer {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.06);
+            transform: scale(1.06);
+  }
+}
+
+@keyframes Zoomer {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(1.06);
+            transform: scale(1.06);
   }
 }
 
@@ -729,19 +758,7 @@
 
 .filter-left li {
   list-style-type: none;
-}
-
-.filter-left li a {
-  color: black;
-  text-decoration: none;
-  font-family: Montserrat, sans-serif;
-  font-size: 16px;
-}
-
-.filter-left li a:hover {
-  color: red;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  cursor: pointer;
 }
 
 .filter-right {
@@ -824,45 +841,57 @@
 }
 
 .card-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.inner-card {
   font-family: Montserrat, sans-serif;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   text-align: center;
   margin-bottom: 20px;
+  margin-right: 35px;
   cursor: pointer;
 }
 
-.card-item .card-image {
+.inner-card .card-image {
   overflow: hidden;
 }
 
-.card-item .card-image img {
+.inner-card .card-image img {
   width: 295px;
   height: 380.64px;
 }
 
-.card-item .card-image img:hover {
+.inner-card .card-image img:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
 }
 
-.card-item .card-title {
+.inner-card .card-title {
   margin-top: 10px;
   text-align: center;
 }
 
-.card-item .add-to-card {
+.inner-card .add-to-card {
   display: inline-block;
   text-align: center;
   overflow: hidden;
 }
 
-.card-item .add-to-card a {
+.inner-card .add-to-card a {
   position: relative;
   color: #bdb8b8;
   text-decoration: none;
+}
+
+.space {
+  margin-left: 0px;
+  margin-right: 35px;
 }
 /*# sourceMappingURL=main.css.map */
