@@ -18,8 +18,6 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/assets/css/main.css" />
-    <script src="./JS/navbar/searchabr.js" defer></script>
-    <script src="./JS/navbar/hamburger.js" defer></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
@@ -28,7 +26,10 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js" defer></script>
+    <script src="./JS/navbar/searchabr.js" defer></script>
+    <script src="./JS/navbar/hamburger.js" defer></script>
     <script src="./JS/flower-cards/flowers.js" defer></script>
+    <script src="./JS/navbar/basket.js" defer></script>
     <title>Fiorella - Home</title>
   </head>
 
@@ -229,7 +230,8 @@
               </a>
               <a href="#" class="cart">
                 <i class="fa-solid fa-bag-shopping"></i>
-                <p>CART($0)</p>
+                <p class="flower-sum-price">CART($0)</p>
+                <span class="flower-count">0</span>
               </a>
             </div>
           </div>
@@ -395,7 +397,7 @@
           <div class="row">
             <div class="flower-cards">
               <div class="card-item col-3">
-                <div class="inner-card cactuses">
+                <div class="inner-card cactuses" data-id="1">
                   <div class="card-image">
                     <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-14-img.jpg" alt="card image">
                   </div>
@@ -403,106 +405,106 @@
                     <p>Majesty Palm</p>
                   </div>
                   <div class="add-to-card">
-                   <!-- <a href="#">Add to Card</a> -->
+                   <a href="#">Add to Card</a>
                    <a href="#">$259</a>
                   </div>
                 </div>
               </div>
               <div class="card-item col-3">
-                <div class="inner-card popular exotic">
+                <div class="inner-card popular exotic" data-id="2">
                   <div class="card-image">
                     <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-13-img.jpg" alt="card image">
                   </div>
                   <div class="card-title">
-                    <p>Majesty Palm</p>
+                    <p>FoxGlove Flower</p>
                   </div>
                   <div class="add-to-card">
-                   <!-- <a href="#">Add to Card</a> -->
-                   <a href="#">$259</a>
+                   <a href="#">Add to Card</a>
+                   <a href="#">$233</a>
                   </div>
                 </div>
               </div>
               <div class="card-item col-3">
-                <div class="inner-card various cactuses">
+                <div class="inner-card various cactuses" data-id="3">
                   <div class="card-image">
                     <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/05/shop-10-img.jpg" alt="card image">
                   </div>
                   <div class="card-title">
-                    <p>Majesty Palm</p>
+                    <p>Sweet Alyssum</p>
                   </div>
                   <div class="add-to-card">
-                   <!-- <a href="#">Add to Card</a> -->
-                   <a href="#">$259</a>
+                   <a href="#">Add to Card</a>
+                   <a href="#">$299</a>
                   </div>
                 </div>
               </div>
               <div class="card-item col-3">
-                <div class="inner-card exotic" style="margin-right: 0px;margin-left: 35px;">
+                <div class="inner-card exotic" data-id="4">
                   <div class="card-image">
                     <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-11-img.jpg" alt="card image">
                   </div>
                   <div class="card-title">
-                    <p>Majesty Palm</p>
+                    <p>Spring Snowflake</p>
                   </div>
                   <div class="add-to-card">
-                   <!-- <a href="#">Add to Card</a> -->
-                   <a href="#">$259</a>
+                   <a href="#">Add to Card</a>
+                   <a href="#">$159</a>
                   </div>
                 </div>
               </div>
               <div class="card-item col-3">
-                <div class="inner-card popular">
+                <div class="inner-card popular" data-id="5">
                   <div class="card-image">
                     <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-12-img.jpg" alt="card image">
                   </div>
                   <div class="card-title">
-                    <p>Majesty Palm</p>
+                    <p>Scarlet Sage</p>
                   </div>
                   <div class="add-to-card">
-                   <!-- <a href="#">Add to Card</a> -->
-                   <a href="#">$259</a>
+                   <a href="#">Add to Card</a>
+                   <a href="#">$264</a>
                   </div>
                 </div>
               </div>
               <div class="card-item col-3">
-                <div class="inner-card winter cactuses">
+                <div class="inner-card winter cactuses" data-id="6">
                   <div class="card-image">
                     <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-9-img.jpg" alt="card image">
                   </div>
                   <div class="card-title">
-                    <p>Majesty Palm</p>
+                    <p>Rock Soapwort</p>
                   </div>
                   <div class="add-to-card">
-                   <!-- <a href="#">Add to Card</a> -->
-                   <a href="#">$259</a>
+                   <a href="#">Add to Card</a>
+                   <a href="#">$428</a>
                   </div>
                 </div>
               </div>
               <div class="card-item col-3">
-                <div class="inner-card greens winter">
+                <div class="inner-card greens winter" data-id="7">
                   <div class="card-image">
                     <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-8-img.jpg" alt="card image">
                   </div>
                   <div class="card-title">
-                    <p>Majesty Palm</p>
+                    <p>Summer Savory</p>
                   </div>
                   <div class="add-to-card">
-                   <!-- <a href="#">Add to Card</a> -->
-                   <a href="#">$259</a>
+                   <a href="#">Add to Card</a>
+                   <a href="#">$156</a>
                   </div>
                 </div>
               </div>
               <div class="card-item col-3" >
-                <div class="inner-card greens" style="margin-right: 0px;margin-left: 35px;">
+                <div class="inner-card greens" data-id="8">
                   <div class="card-image">
                     <img src="https://fiorello.qodeinteractive.com/wp-content/uploads/2018/04/shop-7-img.jpg" alt="card image">
                   </div>
                   <div class="card-title">
-                    <p>Majesty Palm</p>
+                    <p>Wild Roses</p>
                   </div>
                   <div class="add-to-card">
-                   <!-- <a href="#">Add to Card</a> -->
-                   <a href="#">$259</a>
+                   <a href="#">Add to Card</a>
+                   <a href="#">$309</a>
                   </div>
                 </div>
               </div>

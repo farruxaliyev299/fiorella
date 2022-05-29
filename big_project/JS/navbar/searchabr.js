@@ -1,8 +1,6 @@
 const searchIcon = document.querySelector('.fa-magnifying-glass');
 const searchBar = document.querySelector('.search-box');
 
-console.log(searchBar.classList.contains("searchbar-open"));
-
 searchIcon.addEventListener('click', (e) => {
 
     e.preventDefault();

@@ -90,6 +90,10 @@
   color: red;
 }
 
+.flower-count {
+  visibility: hidden;
+}
+
 .cart {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,6 +115,14 @@
   margin: 0;
   color: black;
   font-family: Montserrat, sans-serif;
+}
+
+.cart span {
+  background-color: tomato;
+  color: white;
+  border-radius: 15px;
+  font-size: 12px;
+  padding: 2px 7px;
 }
 
 .padding {
@@ -768,9 +780,11 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  margin-right: 40px;
 }
 
 .filter-right a {
+  margin-right: 40px;
   color: black;
   text-decoration: none;
   font-family: Montserrat, sans-serif;
@@ -800,6 +814,7 @@
   width: 460px;
   top: 20px;
   right: 0px;
+  padding-bottom: 20px;
   z-index: 2;
 }
 
@@ -888,10 +903,5 @@
   position: relative;
   color: #bdb8b8;
   text-decoration: none;
-}
-
-.space {
-  margin-left: 0px;
-  margin-right: 35px;
 }
 /*# sourceMappingURL=main.css.map */
